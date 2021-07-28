@@ -1,0 +1,100 @@
+https://jsfiddle.net/NickDeakin32/hesvxbyu/56/ 
+
+<html>
+<head>
+<style>
+body {background-color:powderblue}
+</style>
+<title>First HTML Page</title>
+</head>
+<body>
+
+<h1 style="color:green;">My First Heading!</h1>
+
+<p style="color:orange;">Below is an image of the w3 schools logo:</p>
+<img src="https://www.w3schools.com/images/w3schools_green.jpg"> 
+
+<p>
+This is my list:
+<ol id="My First List">
+  <li>Item 1</li>
+  <li>Item 2</li>
+
+</ol>
+</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Age</th> 
+    <th>Score</th>
+  </tr>
+  <tr>
+    <td>Angelo</td>
+    <td>56</td>
+    <td>78/100</td>
+  </tr>
+  <tr>
+    <td>Nick</td>
+    <td>21</td>
+    <td>71/100</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>26</td>
+    <td>92/100</td>
+  </tr>
+</table>
+
+<h2>
+My Shopping List:
+</h2>
+
+<ul id="myshoppinglist">
+<li>Eggs</li>
+<li>Cheese</li>
+<li>Bread</li>
+</ul>
+
+<h3>Types of Milk:</h3>
+<dl>
+<dd>-Full Cream</dd>
+<dd>-Skinny</dd>
+<dd>-Soy</dd>
+<dd>-Almond</dd>
+</dl>
+
+<div class="newspaper">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+</div>
+
+<h4>My First JavaScript Element!</h4>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+
+<div class="wrapper">
+
+	<h1>Grade Calculator</h1>
+
+	<div class="directions">Input your grades separated by commas:</div>
+
+	<input id="yourgrades" type="text" />
+	<input id="submitbutton" type="button" value="Calculate" onClick="submit();"/>
+
+	<p>Your grades from high to low:</p>
+	<div id="grades"></div>
+
+	<p>Your average grade is:</p>
+	<div id="avg_grades"></div>
+
+	<p>Your final grade is:</p>
+	<div id="final_grade"></div>
+
+</div>
+
+</body>
+</html>
