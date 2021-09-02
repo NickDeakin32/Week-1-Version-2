@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> 
+<title>Task 4</title>
+</head>
+
+<body>
+
+<div id="app">
+ <h2>ToDos:</h2>
+ <ol>
+   <li v-for="todo in todos">
+   <label>
+     <input type="checkbox"
+     v-on:change="tottle(todo)"
+     v-bind:checked="todo.done">
+     <del v-if="todo.done">
+       {{ todo.text }}
+     </del>
+     <span v-else>
+       {{ todo.text }}
+     </span>
+   </label>
+   </li>
+ </ol>
+</div>
+
+<script>
+new vue({
+el: "#app",
+data: {
+todos: [
+{ text: "Assignment 1", done: true },
+{ text: "Assignment 2", done: false },
+{ text: "Assignment 3", done: false }
+]
+},
+methods: {
+toggle: function(todo){
+todo.done = !todo.done
+}
+}
+})
+
+</script>
+
+</body>
+</html>
